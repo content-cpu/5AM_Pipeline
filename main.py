@@ -18,7 +18,7 @@ from google.cloud import storage
 # ==========================================
 # 1. CONFIGURATION
 # ==========================================
-SERPER_API_KEY = "ef08ec9dba860a167166861687f5b0ae83f0dac6"
+SERPER_API_KEY = SERPER_API_KEY
 SEARCH_WINDOW_HOURS = 48
 MAX_WORKERS = 5
 API_TIMEOUT = 20
