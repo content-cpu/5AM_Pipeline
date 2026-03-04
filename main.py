@@ -24,11 +24,11 @@ MAX_WORKERS = 5
 API_TIMEOUT = 20
 
 # NEW: Cloud & Email Settings
-GCS_BUCKET_NAME = "YOUR_BUCKET_NAME_HERE" # Put your exact bucket name here!
-EMAIL_SENDER = "your_email@gmail.com"     # The email sending the file
-EMAIL_PASSWORD = "your_16_letter_app_password" # No spaces
-EMAIL_RECEIVER = "receiver@sampadha.com"  # Where to send it
-
+SERPER_API_KEY = os.getenv("SERPER_API_KEY")
+GCS_BUCKET_NAME = os.getenv("GCS_BUCKET_NAME")
+EMAIL_SENDER = os.getenv("EMAIL_SENDER")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+EMAIL_RECEIVER = os.getenv("EMAIL_RECEIVER")
 # DYNAMIC DATE: Updated to yesterday
 TARGET_DATE = date.today() - timedelta(days=1)
 IST_OFFSET = timedelta(hours=5, minutes=30)
